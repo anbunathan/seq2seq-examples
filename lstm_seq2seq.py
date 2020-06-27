@@ -124,6 +124,9 @@ for i, (input_text, target_text) in enumerate(zip(input_texts, target_texts)):
             decoder_target_data[i, t - 1, target_token_index[char]] = 1.
     decoder_input_data[i, t + 1:, target_token_index[' ']] = 1.
     decoder_target_data[i, t:, target_token_index[' ']] = 1.
+print("encoder_input_data = ", encoder_input_data)
+print("decoder_input_data = ", decoder_input_data)
+print("decoder_target_data = ", decoder_target_data)
 # Define an input sequence and process it.
 encoder_inputs = Input(shape=(None, num_encoder_tokens))
 encoder = LSTM(latent_dim, return_state=True)

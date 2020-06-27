@@ -1,4 +1,5 @@
 fra-eng
 Seq2Seq_Tutorial/sql/
-Seq2Seq_Tutorial/notebooks/github_issues.csv
+Seq2Seq_Tutorial/notebooks/data
+Seq2Seq_Tutorial/notebooks/seq2seq
 s2s.h5
